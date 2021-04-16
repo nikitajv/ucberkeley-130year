@@ -1,0 +1,24 @@
+
+
+body{
+ margin:0;
+ padding:0;
+ font-size:20px;
+ font-family: 'Open Sans', sans-serif;
+}
+
+
+.hero-img{
+    width:100%;
+    height:auto;
+}
+
+.middle-img{
+    width:50%;
+}
+.text{
+    width:auto;
+    height: auto;
+    margin: 60px;
+    padding:30px;
+}
