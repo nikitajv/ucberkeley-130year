@@ -1,90 +1,269 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
-        <meta charset="utf-8"/>
         <title>Homepage UC Berkeley Extension 130 year</title>
+
+        <!-- MetaTags -->
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
         <meta name="description" content="describes 130 years of UC Berkely's history"/>
         <meta name="author" content="Nikita Jain Vyas"/>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap-grid.min.css" integrity="sha512-cKoGpmS4czjv58PNt1YTHxg0wUDlctZyp9KUxQpdbAft+XqnyKvDvcGX0QYCgCohQenOuyGSl8l1f7/+axAqyg==" crossorigin="anonymous" />
+
+        <!-- Navbar -->
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+        <!-- Stylesheet-->
         <link rel="stylesheet" href="./assets/css/styles.css"/>
+
+        <!-- Javascript -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap-grid.min.css" integrity="sha512-cKoGpmS4czjv58PNt1YTHxg0wUDlctZyp9KUxQpdbAft+XqnyKvDvcGX0QYCgCohQenOuyGSl8l1f7/+axAqyg==" crossorigin="anonymous" />
+
+        <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+
+        <!-- Carousel -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" />
+
+        <!-- Lightbox -->
+        <link rel="stylesheet" href="./assets/css/lightbox.min.css"/>
+
+        <!-- Footer -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" />  
     </head>
+
+
+
     <body>
-    
+        <!-- Navbar starts-->
+        <header>
+        <div class="logo"><a href="https://extension.berkeley.edu/" target="_blank"><img src="./assets/images/UCBElogoblue.png" alt="UCBE Logo"></a></div>
         <nav>
-           <img class="logo" height="80px" width="60px" src="./assets/images/logo130.png"/>
-           <!-- <p>UC Berkeley Extension</p> -->
-           <ul>
+          <ul>
               <li><a href="index.html">Home</a></li>
-              <li><a href="#">Timeline</a>
-                 <ul>
-                   <li><a href="decade1.html">1890-1910</a></li>
-                   <li><a href="decade2.html">1911-1930</a></li>
-                   <li><a href="decade3.html">1931-1950</a></li>
-                   <li><a href="decade4.html">1951-1970</a></li>
-                   <li><a href="decade5.html">1971-1990</a></li>
-                   <li><a href="decade6.html">1991-2010</a></li>
-                   <li><a href="decade7.html">2011-2020</a></li>
-                 </ul>
-                </li>
+              <li class="sub-menu"><a href="#">Timeline</a>
+                  <ul>
+                      <li><a href="decade1.html">1890-1910</a></li>
+                      <li><a href="decade2.html">1911-1930</a></li>
+                      <li><a href="decade3.html">1931-1950</a></li>
+                      <li><a href="decade4.html">1951-1970</a></li>
+                      <li><a href="decade5.html">1971-1990</a></li>
+                      <li><a href="decade6.html">1991-2010</a></li>
+                      <li><a href="decade7.html">2011-2020</a></li>
+                  </ul>
+              </li>
               <li><a href="2021.html">2021</a></li>
-            
-           </ul>
+          </ul>
         </nav>
+        <div class="menu-toggle"><i class="fa fa-bars" aria-hidden="true"></i>
+        </div>
+        </header>
+        <!-- Navbar ends-->
    
    
-    <main>
+        <main>
         <section>
-        
+          
+        <!-- Hero Image -->
         <div class="hero-img">
-        <img src="https://open.berkeley.edu/sites/default/files/styles/panopoly_image_original/public/image-only-hero.png?itok=3UoynoEW&timestamp=1515632641"/>
+          <img src="./assets/images/logo130.png" alt="Logo130">
         </div>
 
-        <div class="text">
-        <h1>Our Roots</h1>
-        <p>In 1891, Berkeley faculty started teaching courses in history, philosophy, mathematics and English to the public in San Francisco, with great success (over 800 learners in the first fall semester). This initiative came to life as a reaction to calls from the Californian people to make the university’s education offerings more accessible and to fully embrace its mission as a land grant university. Indeed, until today, the University of California is bound “to serve society as a center of higher learning, providing long-term societal benefits through transmitting advanced knowledge, discovering new knowledge, and functioning as an active working repository of organized knowledge” 1 . For the founders of the university’s Extension, this mission meant providing access to learners of all ages and as a consequence, they pioneered the uniquely American concept of lifelong learning through continuing education. In fact, the name of ‘lifelong learning’ was coined by one of Extension's first deans, Sean J. Richardson. The reason for the creation of the University of California as well as its Extension in the late 19th century, was to accelerate the economic development of California to catch up with the roaring industrialization on the East Coast (Picture 1). However, before Extension was born, the university consisted only of a few posh buildings and a theater on a remote hill, in the vicinity of the sleepy East Bay town of Berkeley (Picture 2). Privileged sons and daughters of wealthy families were studying and preparing themselves for high level positions in research, politics, public administration, and business. With the idea to give access to its excellent educational offerings to people of all ages, who would attend a single course at a time, while working, Extension breached the gap of academia and professional world, and created one the most advanced and successful continuing education department in history.</p>
+        <!-- Our Roots Accordian Text starts -->
+        <div class="container">
+          <div class="row">
+          <div class="col-md-2"></div>
+          <div class="col-md-8">
+          <h1 id="head1">OUR ROOTS</h1>
+          <br>
+          <p class="intro">In 1891, Berkeley faculty started teaching courses in history, philosophy, mathematics and
+            English to the public in San Francisco, with great success (over 800 learners in the first fall
+            semester). This initiative came to life as a reaction to calls from the Californian people to
+            make the university’s education offerings more accessible and to fully embrace its mission
+            as a land grant university. </p>
+          <p class="remainder-text">Indeed, until today, the University of California is bound “to serve
+            society as a center of higher learning, providing long-term societal benefits through
+            transmitting advanced knowledge, discovering new knowledge, and functioning as an
+            active working repository of organized knowledge” 1 . For the founders of the university’s
+            Extension, this mission meant providing access to learners of all ages and as a
+            consequence, they pioneered the uniquely American concept of lifelong learning through
+            continuing education. In fact, the name of ‘lifelong learning’ was coined by one of
+            Extension's first deans, Sean J. Richardson.<br> <br>The reason for the creation of the University of California as well as its Extension in the late
+            19th century, was to accelerate the economic development of California to catch up with
+            the roaring industrialization on the East Coast (Picture 1). However, before Extension was
+            born, the university consisted only of a few posh buildings and a theater on a remote hill, in
+            the vicinity of the sleepy East Bay town of Berkeley (Picture 2). Privileged sons and
+            daughters of wealthy families were studying and preparing themselves for high level
+            positions in research, politics, public administration, and business. With the idea to give
+            access to its excellent educational offerings to people of all ages, who would attend a single
+            course at a time, while working, Extension breached the gap of academia and professional
+            world, and created one the most advanced and successful continuing education
+            department in history.</p>
+          <button class="toggle-button" title="show more">show more</button>
+          </div>
+          <div class="col-md-2"></div>
+          </div>
+        </div>
+        <!-- Our Roots Accordian Text Ends -->
+
+
+
+        <!-- Two images center starts -->
+      
+        <div id="media-tile">
+            <iframe src="https://www.youtube.com/embed/qYGH6CmYzEE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
 
-       
-            <div class="row">
-              <div class="col-sm">
-                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/qYGH6CmYzEE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                
-              </div>
-              <div class="col-sm">
-                <img width="100%" height="100%" src="./assets/images/h130.jpg"/>
-              </div>
-            </div>
+        <div id="title-tile">
+            <p>Lighting the way for</p>
+            <h1>130 Years</h1>
+        </div>
+      
+        <!-- Two images center ends -->
         
 
+        <!-- Our Reach Accordian Text starts -->
+        <div class="container">
+          <div class="row">
+          <div class="col-md-2"></div>
+          <div class="col-md-8">
+            <h1 id="head2">OUR REACH</h1>
+            <BR>
+          <p class="intro">The central concept of Extension, as envisioned by it’s first proponents, notably the two UC
+            Presidents, Edward S. Holden and Horace Davis, has always been the accessibility to the
+            courses offered by our instructors. Consequently, Extension courses took place where the
+            learners worked and lived, not on the remote campus in Berkeley. After the immediate
+            success of its first courses, the regents officially adopted an extramural instruction plan
+            that formally established the University Extension on Valentine’s Day, February 14, 1893.</p>
+        
+          <p class="remainder-text">The concept of accessibility and the willingness to go towards the learners led Extension to
+            constantly innovate new ways of reaching learners, for example, in 1928 Extension teaches
+            on commuter trains, in 1945 Extension taught over 26,000 learners via its correspondence
+            courses, in 1994 Extension ventures into online education and in 2012 Extension creates
+            the UC’s first online course production department BRCO.
+            Today, in part due to the global pandemic, Extension has developed the capacity to reach
+            learners beyond the bay area with live instruction. Learners from anywhere in the world
+            are now able to join our courses and we can help them, to launch or change their careers,
+            to support their families, and share their knowledge and the Berkeley mindset.</p>
+        
+          <button class="toggle-button" title="show more">show more</button>
+        </div>
+        <div class="col-md-2"></div>
+        </div>
+        </div>
+        <!-- Our Reach Accordian Text Ends -->
+       
 
 
-    <div class="text">
-        <h1>Our Reach</h1>
-        <p>The central concept of Extension, as envisioned by it’s first proponents, notably the two UC Presidents, Edward S. Holden and Horace Davis, has always been the accessibility to the courses offered by our instructors. Consequently, Extension courses took place where the learners worked and lived, not on the remote campus in Berkeley. After the immediate  success of its first courses, the regents officially adopted an extramural instruction plan that formally established the University Extension on Valentine’s Day, February 14, 1893. The concept of accessibility and the willingness to go towards the learners led Extension to constantly innovate new ways of reaching learners, for example, in 1928 Extension teaches on commuter trains, in 1945 Extension taught over 26,000 learners via its correspondence courses, in 1994 Extension ventures into online education and in 2012 Extension creates the UC’s first online course production department BRCO. Today, in part due to the global pandemic, Extension has developed the capacity to reach learners beyond the bay area with live instruction. Learners from anywhere in the world are now able to join our courses and we can help them, to launch or change their careers, to support their families, and share their knowledge and the Berkeley mindset.
-        </p>
-      </div>
+        <!-- Carousel with Lightbox starts-->
+        <div class="owl-carousel owl-theme">
+          
+          <div class="item">
+            <a href="./assets/images/h5.JPG" data-lightbox="image-1" data-title="Post-Baccalaureate Health Professions Program"><img src="assets/images/h5.JPG" alt="Home img"></a>
+          </div>
+          <div class="item">
+            <a href="./assets/images/h6.JPG" data-lightbox="image-1" data-title="Kitty He’s atypical career path to user experience design is actually pretty typical for #UX professionals. “I saw that the power of design can go beyond just fulfilling users’ needs. It can promote social justice, sustainability and inclusiveness.”
+            Read about Kitty: http://bit.ly/kittyhFB"><img src="assets/images/h6.JPG" alt="Home img"></a>
+          </div>
+          <div class="item">
+            <a href="./assets/images/h7.JPG" data-lightbox="image-1" data-title="Professional Writing Program"><img src="assets/images/h7.JPG" alt="Home img"></a>
+          </div>
+          <div class="item">
+            <a href="./assets/images/h8.JPG" data-lightbox="image-1" data-title="2012 Designated Subjects Career Technical Education Teaching Credential graduate Susan Stasi continues to educate hundreds of impoverished girls and deaf children in the Republic of Congo and in Cameroon as the founder of Rose Academies. Read more: http://bit.ly/2VYbvJt"><img src="assets/images/h8.JPG" alt="Home img"></a>
+          </div>
+          <div class="item">
+            <a href="./assets/images/h9.JPG" data-lightbox="image-1" data-title="Experience Institute"><img src="assets/images/h9.JPG" alt="Home img"></a>
+          </div>
+          <div class="item">
+            <a href="./assets/images/h10.JPG" data-lightbox="image-1" data-title="Certificate Program in Personal Financial Planning students"><img src="assets/images/h10.JPG" alt="Home img"></a>
+          </div>
+        </div>
+        <!-- Carousel with Lightbox ends-->
+        </section>
+        </main>
 
-  <div class="container">
-    <div class="row">
-      <div class="col-sm">
-        <img width="100%" height="100%" src="./assets/images/h1.jpg"/>
-      </div>
-      <div class="col-sm">
-        <img width="100%" height="100%" src="./assets/images/h2.jpg"/>
-      </div>
-      <div class="col-sm">
-        <img width="100%" height="100%" src="./assets/images/h3.jpg"/>
-      </div>
-    </div>
-  </div>
 
-    </section>
-    </main>
+        <!-- Footer starts -->
+        <footer>
+        <div class="social">
+          <a href="https://www.facebook.com/UCBerkeleyExtension/" target="_blank" title="Facebook">
+              <i class="fa fa-facebook"></i>
+          </a>
 
-    <footer>
-        <p>Copyright © 2021 UC Regents; all rights reserved</p>
-    </footer>
+          <a href="https://www.instagram.com/ucberkeleyext/" target="_blank" title="Instagram">
+            <i class="fa fa-instagram"></i>
+          </a>
+
+          <a href="https://twitter.com/UCBerkeleyExt" target="_blank" title="Twitter">
+            <i class="fa fa-twitter"></i>
+          </a>
+
+          <a href="https://www.linkedin.com/school/ucberkeleyextension/" target="_blank" title="LinkedIn">
+            <i class="fa fa-linkedin"></i>
+          </a>
+
+          <a href="https://www.youtube.com/channel/UC20sZe5RHww1skkZmDdHC-w" target="_blank" title="Youtube">
+            <i class="fa fa-youtube-play"></i>
+          </a>
+        </div>
+        <p>Copyright &copy; 2021 UC Regents; all rights reserved</p>
+       </footer>
+      <!-- Footer ends  -->
+
+
+
+
+<!-- JAVASCRIPT STARTS HERE -->
+
+       <!-- JS Navbar starts -->
+       <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+       <script type="text/javascript">
+         $(document).ready(function(){
+             $('.menu-toggle').click(function(){
+                 $('nav').toggleClass('active')
+             })
+             $('ul li').click(function(){
+                 $(this).siblings().removeClass('active');
+                 $(this).toggleClass('active');
+             })
+         })
+       </script>
+       <!-- JS Navbar ends-->
+
+       <!-- JS Carousel -->
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
+
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous"></script>
+
+       <script type="text/javascript">
+       $('.owl-carousel').owlCarousel({
+       loop:true,
+       margin:10,
+       nav:false,
+       autoplay:true,
+       autoplayTimeout:2000,
+       responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:2
+        },
+        1000:{
+            items:3
+        }
+        }
+        })
+       </script>
+
+      <!-- JS Lightbox -->
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+      <script src="./assets/js/lightbox.min.js"></script>
+
+      <!-- JS Accordian text -->
+      <script src="./assets/js/script.js"></script>
+
     </body>
 </html>

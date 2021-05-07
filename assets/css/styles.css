@@ -7,108 +7,409 @@ body{
  background:white;
  font-size:20px;
  font-family: 'Open Sans', sans-serif;
+ margin:0 auto;
+ padding:0;
+}
+@media (max-width: 1000px){
+    body{
+        font-size:18px;
+       }
 }
 
-nav{
-    width:100%;
-    height: 70px;
-    background-color: #FDB515;
-}
-
-nav img{
-  margin: 5px 50px;
-  height: 60px;
-  width:40px
-
-}
-
-nav ul{
-    float:right;
-    padding: 0px 50px;
-}
-
-nav ul li{
-    float:left;
-    list-style: none;
-    position:relative;
-
-}
-
-nav ul li a{
-    display: block;
-    color:white;
-    font-size: 14px;
-    padding: 22px 14px;
-    text-decoration: none;
-}
-
-nav ul li ul{
-    display: none;
+/* Navbar starts */
+header{
     position:absolute;
-    background-color: #FDB515;
-    padding: 10px;
-    border-radius: 0px 0px 4px 4px;
+    top: 0;
+    left: 0;
+    padding: 0 100px;
+    background: #FDB515;
+    width: 100%;
+    box-sizing: border-box;
 }
 
-nav ul li:hover ul{
+header .logo{
+   height:30px;
+   width:200px;
+    float: left;
+    margin-top:0.5em;
+}
+
+header .logo a img{
+   height:100%;
+   width:100%;
+}
+
+header nav{
+    float: right;
+    font-weight:600;
+}
+
+header nav ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+header nav ul li{
+    list-style: none;
+    position: relative; 
+}
+
+header nav ul li ul{
+    position: absolute;
+    left: 0;
+    background: #FDB515;
+    display: none;
+}
+
+header nav ul li.active ul{
     display: block;
 }
 
-nav ul li ul li{
-    width: 100px;
+header nav ul li ul li{
+    display: block;
+    width: 200px;
 }
 
-nav ul li ul li a{
-    padding: 8px 14px;
+header nav ul li a{
+    height: 50px;
+    line-height: 50px;
+    padding: 0 20px;
+    color: #003262;
+    text-decoration: none;
+    display: block;
 }
 
-nav ul li ul li a:hover{
-    background-color: #C4820E;
+header nav ul li a:hover,
+header nav ul li a.active{
+    color:#003262;
+    background: #C4820E;
+}
+
+.menu-toggle{
+    color: #003262;
+    float: right;
+    line-height: 50px;
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+}
+@media (max-width: 991px)
+{
+    header{
+        padding: 0 20px;
+    }
+    .menu-toggle{
+        display: block;    
+    }
+    header nav{
+        /* display: none; */
+        position: absolute;
+        width: 100%;
+        height: calc(80vh - 50px);
+        background: #FDB515;
+        top: 50px;
+        left: -100%;
+        transition: 0.5s;
+        z-index:1;
+    }
+    header nav.active{
+        left: 0;
+    }
+    header nav ul{
+        display: block;
+        text-align: center;
+    }
+
+
+    header nav ul li ul li a{
+        color: white;
+    }
+
+    header nav ul li ul li a:hover{
+        background-color: #3B7EA1;
+    }
+
+    header nav ul li.active ul{
+        position: relative;
+        background: #003262;
+
+    }
+
+    header nav ul li ul li{
+        width: 100%;
+    }
+}
+/* Navbar ends */
+
+/* Hero Images */
+.hero-img{
+    background-image: url("https://open.berkeley.edu/sites/default/files/styles/panopoly_image_original/public/image-only-hero.png?itok=3UoynoEW&timestamp=1515632641");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height:30em;
 }
 
 .hero-img img{
-    width:100%;
-    height:auto;
+    float: left;
+    max-height: 200px;
+    margin: 10% 0% 0% 10%;
 }
 
+@media (max-width: 1000px){
+    .hero-img img{
+        margin: 15% 0% 0% 10%;
+    }
+}
+@media (max-width: 600px){
+    .hero-img img{
+        margin: 30% 0% 0% 10%;
+    }
+}
 .hero-img-2021 img{
     width:100%;
-    height:auto;
+    height:600px;
+    margin-bottom: 0px;
+    object-fit: cover;
+}
+.logo130{
+    background:#FDB515;
+    width:100%;
+    height: 500px;
+    margin-top: 0px;
+    margin-bottom: 60px;
+    text-align: center;
 
+    background-image: url("../images/tess-img-flip.png"), url("../images/tess-img.png");
+    background-position:left,right;
+    background-repeat:no-repeat;
+    background-size: contain;
 }
 
-.col-sm{
-    float:left;
+.logo130 img{
+    max-height: 500px;
+    padding:70px;
+    
+}
+
+
+
+/* Carousel Images */
+.item img{
+    width:auto;
+    height:300px;
+    object-fit: cover;
+}
+
+/* Empty */
+.empty{
+    width:100%;
+    height:50px;
+}
+
+/* Twin-Title Images starts */
+
+#media-tile{
     width:50%;
+    height: 500px;
     padding:0;
     margin:0;
+    float: left;
 }
 
+#title-tile{
+    width:50%;
+    height: 500px;
+    padding:5%;
+    margin:0;
+    float: left;
+    background-image: url("../images/tess-img.png");
+    background-color: #003262;
+    background-size: cover;
+    background-position:right;
+    font-size: 30px;
+    color: #FDB515;
+}
 
-.text{
+#title-tile-flip{
+    width:50%;
+    height: 500px;
+    padding:5%;
+    margin:0;
+    float: left;
+    background-image: url("../images/tess-img-flip.png");
+    background-color: #003262;
+    background-size: cover;
+    background-position:left;
+    font-size: 30px;
+    color: #FDB515;
+    text-align: right;
+}
+
+#media-tile iframe{
+    width:100%;
+    height:100%;
+}
+
+#media-tile img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+}
+
+#title-tile img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+}
+
+#title-tile-flip img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+}
+
+@media (max-width: 1200px){
+    #media-tile{
+        height: 400px;
+    }
+    
+    #title-tile{
+        height: 400px;
+    }  
+
+    #title-tile-flip{
+        height: 400px;
+    }
+}
+@media (max-width: 1050px){
+    #media-tile{
+        height: 300px;
+    }
+    
+    #title-tile{
+        height: 300px;
+    }  
+
+    #title-tile-flip{
+        height: 300px;
+    } 
+}
+@media (max-width: 900px){
+    #media-tile{
+        height: 300px;
+    }
+    
+    #title-tile{
+        height: 300px;
+    }  
+
+    #title-tile-flip{
+        height: 300px;
+    } 
+}
+@media (max-width: 700px){
+    #media-tile{
+        width:100%;
+        float: left;
+        height: 400px;
+    }
+    
+    #title-tile{
+        width:100%;
+        float: left;
+        height: 400px;
+    }
+    #title-tile-flip{
+        width:100%;
+        float: left;
+        height: 400px;
+    }
+}
+@media (max-width: 500px){
+    #media-tile{
+        width:100%;
+        float: left;
+        height: 300px;
+    }
+    
+    #title-tile{
+        width:100%;
+        float: left;
+        height: 300px;
+    }
+    #title-tile-flip{
+        width:100%;
+        float: left;
+        height: 300px;
+    }
+}
+/* Twin-Title Images ends */
+
+/* Accordian Starts*/
+
+#head1{
+    color:#003262;
+}
+#head2{
+    color:#003262;
+}
+.container {
+    max-width: 500px;
+    margin: auto;
+  }
+  
+  .remainder-text {
+    display: none;
+  }
+  
+  button {
+    background: transparent;
+    border: none;
+    font-size: 16px;
+    font-weight: bolder;
+    cursor:pointer;
+  }
+
+  .col-md-8{
     width:auto;
     height: auto;
     margin: 60px;
     padding:30px;
 }
+/* Accordian Ends*/
 
-.container{
-    background-color: #eeeeee;
-    padding:40px 100px;
-}
 
-.container img{
-    padding:12px 12px;
-}
-
-footer{
-    background-color:#FDB515 ;
+/* Footer starts*/
+/* footer{
+    background-color:#003262 ;
     height: 70px;
+} */
+footer{
+    background-color:#003262 ;
+    text-align: center;
+    margin-top: 20px;
+    padding:10px;
 }
-
 footer p{
     color:white;
-    padding: 25px 50px;
+   padding-top: 10px;
+   padding-bottom: 20px;
     font-size: 14px;
+    text-align: center;
+}
 
+.social{
+    height:50px;
+    display:flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.social a{
+    text-align: center;
+    margin:10px;
+}
+.social a i{
+    color:white;
 }
