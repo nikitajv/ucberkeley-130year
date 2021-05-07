@@ -132,8 +132,12 @@ header nav ul li a.active{
     header nav ul li.active ul{
         position: relative;
         background: #003262;
-
-    }
+        background-image: url("../images/tess-img-flip.png"), url("../images/tess-img.png");
+        background-position:left,right;
+        background-repeat:no-repeat;
+        background-size: 60%;
+        background-position: bottom left, bottom right;
+    }  
 
     header nav ul li ul li{
         width: 100%;
@@ -183,18 +187,25 @@ header nav ul li a.active{
     text-align: center;
 
     background-image: url("../images/tess-img-flip.png"), url("../images/tess-img.png");
-    background-position:left,right;
+    background-position:bottom left,bottom right;
     background-repeat:no-repeat;
     background-size: contain;
 }
 
-.logo130 img{
-    max-height: 500px;
-    padding:70px;
-    
+@media (max-width: 1020px){
+    .logo130{
+        background-size: 70%;
+    }
+
 }
 
 
+
+
+.logo130 img{
+    max-height: 500px;
+    padding:70px;   
+}
 
 /* Carousel Images */
 .item img{
@@ -384,10 +395,7 @@ header nav ul li a.active{
 
 
 /* Footer starts*/
-/* footer{
-    background-color:#003262 ;
-    height: 70px;
-} */
+
 footer{
     background-color:#003262 ;
     text-align: center;
