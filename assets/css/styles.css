@@ -166,12 +166,14 @@ header nav ul li a.active{
         margin: 30% 0% 0% 10%;
     }
 }
-.hero-img-2021 img{
-    width:100%;
-    height:600px;
-    margin-bottom: 0px;
-    object-fit: cover;
+.hero-img-2021{
+    background-image: url("../images/h2.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height:30em;
 }
+
 .logo130{
     background:#FDB515;
     width:100%;
