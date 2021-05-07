@@ -231,6 +231,7 @@ header nav ul li a.active{
     background-position:right;
     font-size: 30px;
     color: #FDB515;
+    object-fit: contain;
 }
 
 #title-tile-flip{

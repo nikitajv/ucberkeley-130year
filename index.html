@@ -217,7 +217,7 @@
 <!-- JAVASCRIPT STARTS HERE -->
 
        <!-- JS Navbar starts -->
-       <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
        <script type="text/javascript">
          $(document).ready(function(){
              $('.menu-toggle').click(function(){
@@ -232,8 +232,6 @@
        <!-- JS Navbar ends-->
 
        <!-- JS Carousel -->
-       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
-
        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous"></script>
 
        <script type="text/javascript">
@@ -255,11 +253,10 @@
         }
         }
         })
+        $('.owl-dots').children().attr("aria-label", "carousel-button");
        </script>
 
       <!-- JS Lightbox -->
-      <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-
       <script src="./assets/js/lightbox.min.js"></script>
 
       <!-- JS Accordian text -->
