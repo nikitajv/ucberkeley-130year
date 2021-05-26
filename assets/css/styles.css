@@ -183,7 +183,6 @@ header nav ul li a.active{
     width:100%;
     height: 500px;
     margin-top: 0px;
-    margin-bottom: 60px;
     text-align: center;
 
     background-image: url("../images/tess-img-flip.png"), url("../images/tess-img.png");
@@ -192,15 +191,26 @@ header nav ul li a.active{
     background-size: contain;
 }
 
+.video130{
+    background:#003262;
+    width:100%;
+    height: 500px;
+    margin-bottom: 60px;
+    text-align: center;
+    display: flex;
+}
+
+.video130 iframe{
+  margin:auto;
+  border:1px solid;
+}
+
 @media (max-width: 1020px){
     .logo130{
         background-size: 70%;
     }
 
 }
-
-
-
 
 .logo130 img{
     max-height: 500px;
